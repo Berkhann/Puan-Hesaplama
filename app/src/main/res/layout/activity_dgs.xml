@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Yds">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:textColor="@color/colorBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DGS PUAN HESAPLAMA"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.6"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Türkçe        : "
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_turk_dogru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Doğru Sayısı"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edit_turk_yanlis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Yanlış Sayısı"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.6"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Matematik : "
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_mat_dogru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Doğru Sayısı"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edit_mat_yanlis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Yanlış Sayısı"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.6">
+
+        <EditText
+            android:id="@+id/edit_basari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Ön Lisans Başarı Puanı"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.6">
+
+        <CheckBox
+            android:id="@+id/checkbox_onay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Geçen Sene DGS İle Yerleştim"
+            android:textSize="18sp"
+            android:textAlignment="center"></CheckBox>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.6"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_hesapla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlue"
+            android:text="HESAPLA"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_say_sonuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlue"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_soz_sonuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlue"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_esit_sonuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlue"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+</LinearLayout>
